@@ -28,6 +28,8 @@ inquirer
 		})
 	})
 	.catch((error) => {
+		console.log(error);
+
 		if (error.isTtyError) {
 			console.log(error.message);
 		} else {
